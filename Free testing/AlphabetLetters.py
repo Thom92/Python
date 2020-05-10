@@ -6,6 +6,7 @@ p = []
 for i in range(1, 50):
     if i%2 == 0:
         p.append(i)
+print(p)        
 #Another way to print all the upper letters in the alphabet
 # print(list(string.ascii_uppercase))
         

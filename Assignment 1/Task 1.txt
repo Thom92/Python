@@ -1,0 +1,13 @@
+file_name = "springer.csv"
+lines = (line for line in open(file_name)) 
+list_line = (s.rstrip().split(",") for s in lines)
+columnames = next(list_line)
+category = (dict(zip(columnames, data)) for data in list_line)
+list = []
+find = (
+        int(category["English Package Name"])
+            for category in category
+            if category["English Package Name"] == "Computer Science"
+            list.append[category])
+all_books_category = sum(find)
+print(all_books_category)

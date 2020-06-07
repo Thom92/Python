@@ -17,7 +17,7 @@ x = thisdictionary["model"]
 f = open('text.txt', 'r')
 for line in f:
     list.append(line.strip())
-  
+ 
 #List Comprehension
 list3 = [i for i in list]
 tuple = (i for i in t)
